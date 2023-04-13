@@ -1,0 +1,327 @@
+<!DOCTYPE html><html><head>
+		<title>Willez RP</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="css/all.css" crossorigin="anonymous">
+		<script src="js/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<link rel="icon" href="https://cdn.discordapp.com/attachments/1096123144173015150/1096139520933625937/th_1.jpg">
+		<link href="https://fonts.googleapis.com/css2?family=Lato&amp;family=Montserrat&amp;display=swap" rel="stylesheet">
+	<style type="text/css">
+		* {
+			font-family: 'Lato', sans-serif;
+			margin: 0px;
+			padding: 0px;
+			color: #f4f4f4;
+			font-weight: 200;
+			scroll-behavior: smooth;
+		}
+	</style></head>
+	
+		<body style="overflow-x: hidden; background-color: #1F1F1F;">
+		<div style="position: fixed; top: 0px; left: 0px; width: 100vw; height: 100px; display: flex; justify-content: space-between; align-items: center; background: transparent; z-index: 2; transition: all 1s ease 0s;" id="navbar">
+			<img src="https://cdn.discordapp.com/attachments/1096123144173015150/1096139520933625937/th_1.jpg" style="height: 90%; transition: all 1s ease 0s; position: relative; left: -500px; cursor: pointer; display: none;" id="navbarimg" onclick="scrollDIV(document.getElementById('home'));">
+			<div style="display: flex; justify-content: center; align-items: center; height: 100px; transition: all 1s ease 0s; position: relative; right: calc(50% - 950px); width: 100%;" id="navbardiv">
+				<h2 style="cursor: pointer; margin-left: 50px; margin-right: 50px; transition: .5s ease; text-align: center;" onclick="scrollDIV(document.getElementById('home'));" onmouseenter="this.style.color = '#0193dc';" onmouseleave="this.style.color = '#f4f4f4';">Hem</h2>
+				<h2 style="cursor: pointer; margin-left: 50px; margin-right: 50px; transition: .5s ease; text-align: center;" onclick="scrollDIV(document.getElementById('server'));" onmouseenter="this.style.color = '#0193dc';" onmouseleave="this.style.color = '#f4f4f4';">Servern</h2>
+				<h2 style="cursor: pointer; margin-left: 50px; margin-right: 50px; transition: .5s ease; text-align: center;" onclick="scrollDIV(document.getElementById('ansökningar'));" onmouseenter="tolor = '#0193dc';" onmouseleave="this.style.color = '#f4f4f4';">Ansökningar</h2>
+				<h2 style="cursor: pointer; margin-left: 50px; margin-right: 50px; transition: .5s ease; text-align: center;" onclick="window.location.href = 'https://discord.gg/pjC7uDqPrt';" onmouseenter="this.style.color = '#0193dc';" onmouseleave="this.style.color = '#f4f4f4';">Discord</h2>
+                <h2 style="cursor: pointer; margin-left: 50px; margin-right: 50px; transition: .5s ease; text-align: center;" onclick="window.location.href = 'regler.html';" onmouseenter="this.style.color = '#0193dc';" onmouseleave="this.style.color = '#f4f4f4';">Regler</h2>
+			</div>
+		</div>
+		<div style="z-index: -1; position: absolute; overflow: hidden; top: 0px; left: 0px; width: 100vw; height: 100vh;">
+			<video autoplay muted loop style="transform: scale(1.1); width: auto; height: 100%;" id="backgroundVideo">
+				<source src="media/background.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div style="width: 100vw; height: 100vh; z-index: 1;" id="home">
+			<div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; background-color: rgba(0, 0, 0, 0.3); flex-direction: column;">
+				<img src="images/Skarmbild_2023-04-02_212047-transformed-removebg-preview.png" style="height: 30%; transition: 6s ease; opacity: 0;" onload="this.style.opacity = '1';" id="img">
+				<h1 id="slogo" style="opacity: 0; margin-top: 30px;"> </h1>
+			</div>
+		</div>
+		<div style="width: 100vw; display: flex; align-items: center; flex-direction: column;" id="server">
+			<div style="display: flex; align-items: center; flex-direction: column; width: 100%; padding-top: 50px; padding-bottom: 50px;">
+				<div style="width: 80%; height: 20%; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+					<h1 style="font-size: 50px;">Om servern</h1>
+					<hr style="margin-top: 20px; margin-bottom: 50px; width: 180px; border: 1px solid #9500ff;">
+				</div>
+				<div style="width: 80%; height: 20%; display: flex; justify-content: space-around; align-items: center;" id="whyus1">
+					<div style="width: 25%; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px; position: relative; bottom: 0px; transition: .5s ease; cursor: default;" onmouseenter="this.style.bottom = '10px';" onmouseleave="this.style.bottom = '0px';">
+						<div style="width: 100%; display: flex; align-items: center;">
+							<i class="fas fa-lock" style="color: #8400ff; font-size: 30px; margin-right: 15px;"></i>
+							<h2 style="color: #f4f4f4;">Säkerhet</h2>
+						</div>
+						<h3 style="margin-top: 15px;">Vi har säkra servrar skyddade av starka brandväggar för att försäkra spelare en stadig server.</h3>
+					</div>
+					<div style="width: 25%; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px; position: relative; bottom: 0px; transition: .5s ease; cursor: default;" onmouseenter="this.style.bottom = '10px';" onmouseleave="this.style.bottom = '0px';">
+						<div style="width: 100%; display: flex; align-items: center;">
+							<i class="fas fa-user" style="color: #3300ff; font-size: 30px; margin-right: 15px;"></i>
+							<h2 style="color: #f4f4f4;">Spelare</h2>
+						</div>
+						<h3 style="margin-top: 15px;">Servern har nästan alltid spelare 24 timmar om dygnet och servern känns därför aldrig död.</h3>
+					</div>
+					<div style="width: 25%; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px; position: relative; bottom: 0px; transition: .5s ease; cursor: default;" onmouseenter="this.style.bottom = '10px';" onmouseleave="this.style.bottom = '0px';">
+						<div style="width: 100%; display: flex; align-items: center;">
+							<i class="fas fa-question" style="color: #8400ff; font-size: 30px; margin-right: 15px;"></i>
+							<h2 style="color: #f4f4f4;">Support</h2>
+						</div>
+						<h3 style="margin-top: 15px;">Vår support svarar snabbt på discord och kan hjälpa er med alla era bekymmer!</h3>
+					</div>
+				</div>
+				<div style="width: 80%; height: 20%; display: flex; justify-content: space-around; align-items: center; margin-top: 100px;" id="whyus2">
+					<div style="width: 25%; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px; position: relative; bottom: 0px; transition: .5s ease; cursor: default;" onmouseenter="this.style.bottom = '10px';" onmouseleave="this.style.bottom = '0px';">
+						<div style="width: 100%; display: flex; align-items: center;">
+							<i class="fas fa-clock" style="color: #0015ff; font-size: 30px; margin-right: 15px;"></i>
+							<h2 style="color: #f4f4f4;">Uptime</h2>
+						</div>
+						<h3 style="margin-top: 15px;">Med vår säkra server kommer även mycket bra uptime, servern är självklart online 24/7.</h3>
+					</div>
+					<div style="width: 25%; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px; position: relative; bottom: 0px; transition: .5s ease; cursor: default;" onmouseenter="this.style.bottom = '10px';" onmouseleave="this.style.bottom = '0px';">
+						<div style="width: 100%; display: flex; align-items: center;">
+							<i class="fas fa-money-bill" style="color: #2600ff; font-size: 30px; margin-right: 15px;"></i>
+							<h2 style="color: #f4f4f4;">Donationer</h2>
+						</div>
+						<h3 style="margin-top: 15px;">Vi uppskattar donationer något enormt och erbjuder speciella förmåner för donatorer.</h3>
+					</div>
+					<div style="width: 25%; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px; position: relative; bottom: 0px; transition: .5s ease; cursor: default;" onmouseenter="this.style.bottom = '10px';" onmouseleave="this.style.bottom = '0px';">
+						<div style="width: 100%; display: flex; align-items: center;">
+							<i class="fas fa-medal" style="color: #6f00ff; font-size: 30px; margin-right: 15px;"></i>
+							<h2 style="color: #f4f4f4;">Kvalité</h2>
+						</div>
+						<h3 style="margin-top: 15px;">Vi garanterar scripts, server och staff av kvalité, detta ger er den optimala upplevelsen!</h3>
+					</div>
+				</div>
+				<div style="display: flex; justify-content: center; flex-direction: column; margin-top: 50px; width: 100%; align-items: center;">
+					<div id="joinnow" style="background-color: rgb(34, 34, 34); border: 1px solid rgb(0, 42, 255); cursor: pointer; padding: 10px 30px; font-size: 20px; transition: all 0.5s ease 0s; display: flex; justify-content: space-around; align-items: center; width: 80%;" onclick="window.location.href = 'fivem://connect/cfx.re/join/bgdo98';" onmouseenter="this.style.backgroundColor = '#0193dc'; document.getElementById('buttonjoin1').style.color = '#222'; document.getElementById('buttonjoin2').style.color = '#222'; document.getElementById('buttonjoin3').style.color = '#222';" onmouseleave="this.style.backgroundColor = '#222'; document.getElementById('buttonjoin1').style.color = 'rgba(244, 244, 244, 0.7)'; document.getElementById('buttonjoin2').style.color = '#f4f4f4'; document.getElementById('buttonjoin3').style.color = 'rgba(244, 244, 244, 0.7)';">
+						<h2 id="buttonjoin1" style="color: rgba(244, 244, 244, 0.7); font-size: 15px; font-weight: 100; transition: .5s ease; width: 20%; text-align: center;">cfx.re/join/bgdo98</h2>
+						<h2 id="buttonjoin2" style="transition: .5s ease;">Joina nu!</h2>
+						<h2 id="buttonjoin3" style="color: rgba(244, 244, 244, 0.7); font-size: 15px; font-weight: 100; transition: .5s ease; width: 20%; text-align: center;">discord.gg/qmsEDyB58R</h2>
+					</div>
+				</div>
+			</div>
+
+			<div style="width: 100vw; display: flex; align-items: center; flex-direction: column;" id="ansökningar">
+				<div style="display: flex; align-items: center; flex-direction: column; width: 100%; padding-top: 50px; padding-bottom: 50px;">
+					<div style="width: 80%; height: 20%; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+						<h1 style="font-size: 50px;">Ansökningar</h1>
+						<hr style="margin-top: 20px; margin-bottom: 50px; width: 180px; border: 1px solid #2600ff;">
+					</div>
+					<div style="width: 80%; height: 20%; display: flex; justify-content: space-around; align-items: center;" id="whyus1">
+						<div style="width: 25%; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px; position: relative; bottom: 0px; transition: .5s ease; cursor: default;" onmouseenter="this.style.bottom = '10px';" onmouseleave="this.style.bottom = '0px';">
+							<div style="width: 100%; display: flex; align-items: center;">
+								<i class="fas fa-check" style="color: #6200ff; font-size: 30px; margin-right: 15px;"></i>
+								<h2 style="cursor: pointer; margin-left: 5px; margin-right: 5px; transition: .5s ease; text-align: center;" onclick="window.location.href = 'https://notmoonboy.github.io/sodervikenrpmedlemskapsansokning/';" onmouseenter="this.style.color = '#0193dc';" onmouseleave="this.style.color = '#f4f4f4';">Medlemskaps Ansökan</h2>
+							</div>
+							<h3 style="margin-top: 15px;">För dig som vill bli medlem på servern och utveckla din rp. Du får mer möjligheter på severn och roligare scenartion!</h3>
+						</div>
+						<div style="width: 25%; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px; position: relative; bottom: 0px; transition: .5s ease; cursor: default;" onmouseenter="this.style.bottom = '10px';" onmouseleave="this.style.bottom = '0px';">
+							<div style="width: 100%; display: flex; align-items: center;">
+								<i class="fas fa-user" style="color: #1100ff; font-size: 30px; margin-right: 15px;"></i>
+								<h2 style="color: #f4f4f4;">Spelare</h2>
+							</div>
+							<h3 style="margin-top: 15px;">Servern har nästan alltid spelare 24 timmar om dygnet och servern känns därför aldrig död.</h3>
+						</div>
+						<div style="width: 25%; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px; position: relative; bottom: 0px; transition: .5s ease; cursor: default;" onmouseenter="this.style.bottom = '10px';" onmouseleave="this.style.bottom = '0px';">
+							<div style="width: 100%; display: flex; align-items: center;">
+								<i class="fas fa-question" style="color: #5100ff; font-size: 30px; margin-right: 15px;"></i>
+								<h2 style="color: #f4f4f4;">Support</h2>
+							</div>
+							<h3 style="margin-top: 15px;">Vår support svarar snabbt på discord och kan hjälpa er med alla era bekymmer!</h3>
+						</div>
+					</div>
+					<div style="width: 80%; height: 20%; display: flex; justify-content: space-around; align-items: center; margin-top: 100px;" id="whyus2">
+						<div style="width: 25%; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px; position: relative; bottom: 0px; transition: .5s ease; cursor: default;" onmouseenter="this.style.bottom = '10px';" onmouseleave="this.style.bottom = '0px';">
+							<div style="width: 100%; display: flex; align-items: center;">
+								<i class="fas fa-clock" style="color: #ae00ff; font-size: 30px; margin-right: 15px;"></i>
+								<h2 style="color: #f4f4f4;">Uptime</h2>
+							</div>
+							<h3 style="margin-top: 15px;">Med vår säkra server kommer även mycket bra uptime, servern är självklart online 24/7.</h3>
+						</div>
+						<div style="width: 25%; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px; position: relative; bottom: 0px; transition: .5s ease; cursor: default;" onmouseenter="this.style.bottom = '10px';" onmouseleave="this.style.bottom = '0px';">
+							<div style="width: 100%; display: flex; align-items: center;">
+								<i class="fas fa-money-bill" style="color: #8000ff; font-size: 30px; margin-right: 15px;"></i>
+								<h2 style="color: #f4f4f4;">Donationer</h2>
+							</div>
+							<h3 style="margin-top: 15px;">Vi uppskattar donationer något enormt och erbjuder speciella förmåner för donatorer.</h3>
+						</div>
+						<div style="width: 25%; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px; position: relative; bottom: 0px; transition: .5s ease; cursor: default;" onmouseenter="this.style.bottom = '10px';" onmouseleave="this.style.bottom = '0px';">
+							<div style="width: 100%; display: flex; align-items: center;">
+								<i class="fas fa-medal" style="color: #8800ff; font-size: 30px; margin-right: 15px;"></i>
+								<h2 style="color: #f4f4f4;">Kvalité</h2>
+							</div>
+							<h3 style="margin-top: 15px;">Vi garanterar scripts, server och staff av kvalité, detta ger er den optimala upplevelsen!</h3>
+						</div>
+
+		</div>
+		<script type="text/javascript">
+			if (screen.width <= 1073) {
+				document.getElementById("navbarimg").style.display = "none";
+				document.getElementById("navbardiv").style.right = "0%";
+				document.getElementById("navbardiv").style.width = "100%";
+			}
+
+			if (screen.width <= 715) {
+				document.getElementById("whyus1").style.width = "100%";
+				document.getElementById("whyus2").style.width = "100%";
+			}
+
+			window.onload = function() {
+				if (this.scrollY <= 200) {
+					document.getElementById("navbar").style.background = "transparent";
+					document.getElementById("navbardiv").style.right = "calc(50% - " + (document.getElementById("navbardiv").offsetWidth / 2) + "px)";
+				}
+
+				if (screen.width <= 715) {
+					document.getElementById("img").style.transition = "none";
+					document.getElementById("img").style.height = "20%";
+				}
+
+				if (screen.width <= 1500) {
+					document.getElementById("joinnow").style.width = "80%";
+				}
+
+				if (screen.width <= 1600) {
+					document.getElementById("backgroundVideo").style.width = "auto";
+					document.getElementById("backgroundVideo").style.height = "100%";
+				}
+
+				var slogo = "Välkommen till Willez RP!";
+				var i = 0;
+
+				setTimeout(function() {
+					document.getElementById("slogo").style.opacity = "1";
+					setInterval(function() {
+						if (document.getElementById("slogo").innerHTML != slogo) {
+							if (i == 0) {
+								document.getElementById("slogo").innerHTML = slogo.charAt(i);
+							} else {
+								document.getElementById("slogo").innerHTML += slogo.charAt(i);
+							}
+							i++;
+						}
+					}, 50);
+				}, 1000);
+
+				document.getElementById("navbar").style.transition = "1s ease";
+				setTimeout(function() {
+					document.getElementById("navbar").style.top = "0px";
+				}, 500);
+			}
+
+			window.onscroll = function() {
+				if (this.scrollY <= 200) {
+					document.getElementById("navbar").style.background = "transparent";
+					document.getElementById("navbarimg").style.left = "-500px";
+					document.getElementById("navbardiv").style.right = "calc(50% - " + (document.getElementById("navbardiv").offsetWidth / 2) + "px)";
+				} else {
+					document.getElementById("navbar").style.background = "#222";
+					document.getElementById("navbarimg").style.left = "50px";
+					document.getElementById("navbardiv").style.right = "0px";
+				}
+			}
+
+			function scrollDIV(div) { 
+				window.scrollTo({top: div.getBoundingClientRect().top + window.pageYOffset - 100, behavior: 'smooth'});
+			}
+
+			function addRequestInfo(type) {
+				document.getElementById("requestform").innerHTML += "<input type=\"text\" name=\"type\" value=\"" + type + "\" style=\"display: none;\">";
+				document.getElementById("requestform").innerHTML += "<input type=\"text\" name=\"time\" value=\"2023-04-02 22:49\" style=\"display: none;\">";
+			}
+
+			function addRequestField(displayname, name) {
+				document.getElementById("requestform").innerHTML += "<div style=\"margin-top: 30px; display: flex; flex-direction: column; width: 40%;\"><h2 style=\"widows: 100%; margin-bottom: 5px;\">" + displayname + "</h2><input type=\"text\" name=\"" + name + "\" placeholder=\"Ditt svar\" style=\"width: 100%; padding: 10px; background-color: rgba(0, 0, 0, 0.5); font-size: 23px; border: 1px solid #0193dc;\" required></div>";
+			}
+
+			function clearRequestForm() {
+				document.getElementById("requestform").innerHTML = '<h1>Var snäll fyll i nedanstående frågor eller <span onclick=\'document.getElementById("requestform").style.opacity = "0"; setTimeout(function() { document.getElementById("requestform").style.display = "none"; document.getElementById("chooserequest").style.display = "flex"; setTimeout(function() { clearRequestForm(); setTimeout(function() { document.getElementById("chooserequest").style.opacity = "1"; }, 1000); }, 1); }, 1000);\' style="text-decoration: underline; cursor: pointer;">gå tillbaka</span>.</h1>';
+			}
+
+			document.getElementById("requestwhitelist").onclick = function() {
+								document.getElementById("chooserequest").style.opacity = "0";
+				setTimeout(function() {
+					document.getElementById("chooserequest").style.display = "none";
+					document.getElementById("requestform").style.display = "flex";
+					setTimeout(function() {
+						addRequestInfo("whitelist");
+						addRequestField("Namn(IRL)", "1");
+						addRequestField("Ålder(IRL)", "2");
+						addRequestField("Discord namn", "3");
+						addRequestField("Steam länk", "4");
+						addRequestField("Tidigare erfarenhet", "5");
+						addRequestField("Beskriv din karaktär", "6");
+						addRequestField("Varför skall just du bli whitelistad?", "7");
+						addRequestField("Ge exempel på vad som kan vara att gå över gränsen med rp", "8");
+						addRequestField("Övriga frågor eller kommentarer", "9");
+
+						document.getElementById("requestform").innerHTML += "<h3 style=\"margin-top: 25px; width: 80%; text-align: center;\">Av säkerhetsskäl kommer vi att spara din IP adress. Genom att klicka på \"Skicka in ansökan\" godkänner du detta.<h3><input type=\"submit\" name=\"submitrequest\" value=\"Skicka in ansökan\" style=\"background-color: #222; border: 1px solid #0193dc; text-align: center; cursor: pointer; padding: 10px; font-size: 20px; color: #000; transition: .5s ease; padding-left: 30px; padding-right: 30px; color: #f4f4f4; margin-top: 30px;\" onmouseenter=\"this.style.backgroundColor = '#0193dc'; this.style.color = '#222';\" onmouseleave=\"this.style.backgroundColor = '#222'; this.style.color = '#f4f4f4';\">";
+						setTimeout(function() {
+							document.getElementById("requestform").style.opacity = "1";
+						}, 1000);
+					}, 1);
+				}, 1000);
+							}
+
+			document.getElementById("requestcriminal").onclick = function() {
+								alert("Denna ansökningstypen är just nu avstängd.");
+							}
+
+			document.getElementById("requestban").onclick = function() {
+								document.getElementById("chooserequest").style.opacity = "0";
+				setTimeout(function() {
+					document.getElementById("chooserequest").style.display = "none";
+					document.getElementById("requestform").style.display = "flex";
+					setTimeout(function() {
+						addRequestInfo("ban");
+						addRequestField("Namn(IRL)", "1");
+						addRequestField("Ålder(IRL)", "2");
+						addRequestField("Discord namn", "3");
+						addRequestField("Steam länk", "4");
+						addRequestField("Vem vart du bannad av?", "5");
+						addRequestField("Ban ID", "6");
+						addRequestField("Vad står de när du försöker joina?", "7");
+						addRequestField("Beskriv vad som hände när du blev bannad", "8");
+						addRequestField("Hur lång blev din ban?", "9");
+						addRequestField("Varför skall vi unbanna dig?", "10");
+						addRequestField("Vad har du lärt dig?", "11");
+
+						document.getElementById("requestform").innerHTML += "<h3 style=\"margin-top: 25px; width: 80%; text-align: center;\">Av säkerhetsskäl kommer vi att spara din IP adress. Genom att klicka på \"Skicka in ansökan\" godkänner du detta.<h3><input type=\"submit\" name=\"submitrequest\" value=\"Skicka in ansökan\" style=\"background-color: #222; border: 1px solid #0193dc; text-align: center; cursor: pointer; padding: 10px; font-size: 20px; color: #000; transition: .5s ease; padding-left: 30px; padding-right: 30px; color: #f4f4f4; margin-top: 30px;\" onmouseenter=\"this.style.backgroundColor = '#0193dc'; this.style.color = '#222';\" onmouseleave=\"this.style.backgroundColor = '#222'; this.style.color = '#f4f4f4';\">";
+						setTimeout(function() {
+							document.getElementById("requestform").style.opacity = "1";
+						}, 1000);
+					}, 1);
+				}, 1000);
+							}
+
+			document.getElementById("requestboss").onclick = function() {
+								document.getElementById("chooserequest").style.opacity = "0";
+				setTimeout(function() {
+					document.getElementById("chooserequest").style.display = "none";
+					document.getElementById("requestform").style.display = "flex";
+					setTimeout(function() {
+						addRequestInfo("boss");
+						addRequestField("Namn(IRL)", "1");
+						addRequestField("Ålder(IRL)", "2");
+						addRequestField("Discord namn", "3");
+						addRequestField("Steam länk", "4");
+						addRequestField("Vilket chefsjobb söker du?", "5");
+						addRequestField("Vilka erfarenheter har du inom jobbet?", "6");
+						addRequestField("Varför vill du bli chef?", "7");
+						addRequestField("Hur anser du att en chef ska vara?", "8");
+						addRequestField("Karaktärsbeskrivning (minst 350 ord)", "9");
+						addRequestField("Hur ofta kommer du vara aktiv?", "10");
+
+						document.getElementById("requestform").innerHTML += "<h3 style=\"margin-top: 25px; width: 80%; text-align: center;\">Av säkerhetsskäl kommer vi att spara din IP adress. Genom att klicka på \"Skicka in ansökan\" godkänner du detta.<h3><input type=\"submit\" name=\"submitrequest\" value=\"Skicka in ansökan\" style=\"background-color: #222; border: 1px solid #0193dc; text-align: center; cursor: pointer; padding: 10px; font-size: 20px; color: #000; transition: .5s ease; padding-left: 30px; padding-right: 30px; color: #f4f4f4; margin-top: 30px;\" onmouseenter=\"this.style.backgroundColor = '#0193dc'; this.style.color = '#222';\" onmouseleave=\"this.style.backgroundColor = '#222'; this.style.color = '#f4f4f4';\">";
+						setTimeout(function() {
+							document.getElementById("requestform").style.opacity = "1";
+						}, 1000);
+					}, 1);
+				}, 1000);
+							}
+
+			document.getElementById("requestsupport").onclick = function() {
+								alert("Denna ansökningstyp är just nu avstängd.");
+							}
+		</script>
+	
+</div></div></div></body></html>
